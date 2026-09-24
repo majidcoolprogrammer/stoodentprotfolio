@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <div class="logo">ATS Student Portfolio</div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+      </button>
+      <nav>
+        <ul id="main-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="game.html">Play Game</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+
+      <div class="filter-bar">
+        <label for="project-filter">Filter by tag:</label>
+        <select id="project-filter">
+          <option value="all">All</option>
+          <option value="python">Python</option>
+          <option value="game">Game</option>
+          <option value="electronics">Utility</option>
+          <option value="web">Web</option>
+        </select>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Your Python cipher -->
+        <article class="project-card" data-tag="python utility">
+          <img alt="Py Cipher / Decipher preview">
+          <div class="project-title">Py Cipher / Decipher</div>
+          <div class="project-desc">
+            A Python-powered cipher & decipher tool using custom keys and math operations to hide secret messages.
+          </div>
+          <div class="project-meta">
+            <span class="badge">Python · Utility</span>
+            <a href="https://github.com/majidcoolprogrammer/majids-super-cipher-and-decipher-three-billion" class="btn btn-outline" target="_blank">View</a>
+          </div>
+        </article>
+
+        <!-- RPS bot -->
+        <article class="project-card" data-tag="python game">
+          <img alt="RPS Bot preview">
+          <div class="project-title">RPS Bot</div>
+          <div class="project-desc">
+            A simple Python bot that plays Rock–Paper–Scissors with you.
+          </div>
+          <div class="project-meta">
+            <span class="badge">Python · Game</span>
+            <a href="https://github.com/majidcoolprogrammer/boquavious" class="btn btn-outline" target="_blank">View</a>
+          </div>
+        </article>
+
+        <!-- Haunted mouse -->
+        <article class="project-card" data-tag="python utility">
+          <img alt="Haunted Mouse Evil preview">
+          <div class="project-title">Haunted Mouse Evil</div>
+          <div class="project-desc">
+            Evil script that moves your mouse 
+          </div>
+          <div class="project-meta">
+            <span class="badge">Python · Utility</span>
+            <a href="https://github.com/majidcoolprogrammer/haunted-mouse-PW" class="btn btn-outline" target="_blank">View</a>
+          </div>
+        </article>
+
+
+
+      </div>
+    </div>
+
+    <footer>
+      © 2026 · ATS Student Portfolio · Made with HTML, CSS & JS
+    </footer>
+  </main>
+</body>
+</html>

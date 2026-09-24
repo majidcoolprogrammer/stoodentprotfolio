@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reflex Mini-Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <div class="logo">ATS Student Portfolio</div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+      </button>
+      <nav>
+        <ul id="main-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="game.html">Play Game</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2 class="section-title">Reflex Mini-Game</h2>
+
+      <div class="game-wrapper">
+        <div class="game-hud">
+          <div>Time: <span id="game-time">15</span>s</div>
+          <div>Score: <span id="game-score">0</span></div>
+        </div>
+
+        <div class="game-controls">
+          <button type="button" class="btn" id="game-start">Start</button>
+          <button type="button" class="btn btn-outline" id="game-reset">Reset</button>
+        </div>
+
+        <div class="game-area" id="game-area">
+          <div class="game-target" id="game-target" style="display:none;"></div>
+        </div>
+
+        <div class="game-message" id="game-message">
+          Click the green circle as many times as you can before time runs out!
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 · ATS Student Portfolio · Made with HTML, CSS & JS
+    </footer>
+  </main>
+</body>
+</html>

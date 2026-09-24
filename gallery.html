@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <div class="logo">ATS Student Portfolio</div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+      </button>
+      <nav>
+        <ul id="main-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="game.html">Play Game</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2 class="section-title">Photo Gallery</h2>
+
+      <div class="gallery-wrapper">
+        <div class="slider" id="gallery-slider">
+          <div class="slide active">Gallery 1 – School Projects</div>
+          <div class="slide">Gallery 2 – Coding Sessions</div>
+          <div class="slide">Gallery 3 – Games & Experiments</div>
+        </div>
+
+        <button class="slider-arrow left" data-gallery-prev>&lt;</button>
+        <button class="slider-arrow right" data-gallery-next>&gt;</button>
+
+        <div class="slider-dots" id="gallery-dots">
+          <div class="slider-dot active" data-gallery-dot="0"></div>
+          <div class="slider-dot" data-gallery-dot="1"></div>
+          <div class="slider-dot" data-gallery-dot="2"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 · ATS Student Portfolio · Made with HTML, CSS & JS
+    </footer>
+  </main>
+</body>
+</html>
